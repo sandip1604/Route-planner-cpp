@@ -1,0 +1,23 @@
+# ninja log v5
+1	528	1642289411143830015	CMakeFiles/OSM_A_star_search.dir/src/route_planner.cpp.o	68ee82c14dc2b9ba
+1	805	1642289411419828866	CMakeFiles/OSM_A_star_search.dir/src/route_model.cpp.o	2e98dcf9128ef2aa
+0	1109	1642289411719827618	CMakeFiles/OSM_A_star_search.dir/src/model.cpp.o	40addd487d2018f9
+1	1267	1642289411879826952	thirdparty/pugixml/CMakeFiles/pugixml.dir/src/pugixml.cpp.o	f06209e19fd4a6d4
+1267	1274	1642289411887826919	../lib/libpugixml.a	ff2ff2f23ade10cd
+0	1579	1642289412191825654	CMakeFiles/OSM_A_star_search.dir/src/main.cpp.o	bbc6d73741576538
+0	2549	1642289413159821624	CMakeFiles/OSM_A_star_search.dir/src/render.cpp.o	f8da4682e542545
+2549	2879	1642289413491820241	OSM_A_star_search	d7b23c23977a8944
+1	1469	1642301738894003827	CMakeFiles/OSM_A_star_search.dir/src/main.cpp.o	bbc6d73741576538
+1	463	1642302253460099358	CMakeFiles/OSM_A_star_search.dir/src/route_planner.cpp.o	68ee82c14dc2b9ba
+463	707	1642302253704099438	OSM_A_star_search	d7b23c23977a8944
+0	1760	1642364176757764989	CMakeFiles/OSM_A_star_search.dir/src/main.cpp.o	bbc6d73741576538
+1	788	1642364220061605919	CMakeFiles/OSM_A_star_search.dir/src/route_planner.cpp.o	68ee82c14dc2b9ba
+788	1134	1642364220405604656	OSM_A_star_search	d7b23c23977a8944
+0	604	1642364506072558443	CMakeFiles/OSM_A_star_search.dir/src/route_planner.cpp.o	68ee82c14dc2b9ba
+604	1002	1642364506468556995	OSM_A_star_search	d7b23c23977a8944
+0	523	1642365454949102307	CMakeFiles/OSM_A_star_search.dir/src/route_planner.cpp.o	68ee82c14dc2b9ba
+523	773	1642365455197101406	OSM_A_star_search	d7b23c23977a8944
+1	552	1642365559328722860	CMakeFiles/OSM_A_star_search.dir/src/route_planner.cpp.o	68ee82c14dc2b9ba
+552	891	1642365559668721624	OSM_A_star_search	d7b23c23977a8944
+103	2089	1642367618662495515	CMakeFiles/OSM_A_star_search.dir/src/route_planner.cpp.o	68ee82c14dc2b9ba
+2089	3732	1642367620306483306	OSM_A_star_search	d7b23c23977a8944
