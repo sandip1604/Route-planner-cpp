@@ -36,7 +36,7 @@ float RoutePlanner::CalculateHValue(RouteModel::Node const *node)
 
 void RoutePlanner::AddNeighbors(RouteModel::Node *current_node)
 {
-    std::cout<<"entered ADDNeighbours function\n";
+    //std::cout<<"entered ADDNeighbours function\n";
     current_node->FindNeighbors();
     for(auto neighbour: current_node->neighbors){
         neighbour->parent = current_node;
@@ -45,7 +45,7 @@ void RoutePlanner::AddNeighbors(RouteModel::Node *current_node)
         neighbour->visited = true;
         open_list.push_back(neighbour);
     }
-    std::cout<<" exiting AddNeighbors()";
+    //std::cout<<" exiting AddNeighbors()";
 }
 bool RoutePlanner::Compare(const RouteModel::Node *a, const RouteModel::Node *b) {
     auto f_value1 = a->g_value + a->h_value;
@@ -54,7 +54,7 @@ bool RoutePlanner::Compare(const RouteModel::Node *a, const RouteModel::Node *b)
 }
 
 void RoutePlanner::sortOpenList() {
-    std::cout<<"entering sort\n";
+    //std::cout<<"entering sort\n";
     std::sort(open_list.begin(), open_list.end(),RoutePlanner::Compare);
 }
 
@@ -67,7 +67,7 @@ void RoutePlanner::sortOpenList() {
 // - Return the pointer.
 
 RouteModel::Node *RoutePlanner::NextNode() {
-    std::cout<<"entering next node\n";
+    //std::cout<<"entering next node\n";
     sortOpenList();
     auto next_node = open_list.back();
     open_list.pop_back();
@@ -85,7 +85,7 @@ RouteModel::Node *RoutePlanner::NextNode() {
 
 std::vector<RouteModel::Node> RoutePlanner::ConstructFinalPath(RouteModel::Node *current_node) {
     // Create path_found vector
-    std::cout<<"entering final path construction\n";
+    //std::cout<<"entering final path construction\n";
     distance = 0.0f;
     std::vector<RouteModel::Node> path_found;
     auto iterate_node = current_node;
@@ -111,8 +111,9 @@ std::vector<RouteModel::Node> RoutePlanner::ConstructFinalPath(RouteModel::Node 
 void RoutePlanner::AStarSearch() {
     RouteModel::Node *current_node = nullptr;
     // TODO: Implement your solution here.
-    std::cout<<"starting A-star\n";
+    //std::cout<<"starting A-star\n";
     open_list.push_back(start_node);
+    start_node->visited = true;
     //current_node = start_node;
     //AddNeighbors(current_node);
     while(open_list.size()>0){
